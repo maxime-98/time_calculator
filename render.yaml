@@ -1,17 +1,14 @@
 services:
   - type: web
-    name: time_calculator
+    name: time_calculator_api
     env: docker
     dockerfilePath: time-api/Dockerfile
-    buildCommand: ""
-    startCommand: ""
     plan: free
     autoDeploy: true
+
   - type: web
     name: time_calculator_frontend
     env: docker
     dockerfilePath: time-frontend/Dockerfile
-    buildCommand: ""
-    startCommand: ""
     plan: free
     autoDeploy: true
