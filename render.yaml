@@ -10,7 +10,7 @@ services:
   - type: web
     name: time_calculator_frontend
     env: docker
-    dockerfilePath: ./time-frontend/Dockerfile
+    dockerfilePath: time-frontend/Dockerfile
     buildCommand: ""
     startCommand: ""
     plan: free
