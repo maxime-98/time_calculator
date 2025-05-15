@@ -3,7 +3,7 @@ async function calculate() {
     const duration = document.getElementById("duration").value;
     const operation = document.getElementById("operation").value;
   
-    const response = await fetch("http://localhost:3000/api/calculate", {
+    const response = await fetch("/api/calculate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
