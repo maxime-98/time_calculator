@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  time-api:
+    build: ./time-api
+    container_name: time-api
+    ports:
+      - "3000:3000"
+  
+  time-frontend:
+    build: ./time-frontend
+    container_name: time-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - time-api
