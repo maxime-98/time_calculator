@@ -3,7 +3,7 @@ async function calculate() {
     const duration = document.getElementById("duration").value;
     const operation = document.getElementById("operation").value;
   
-    const response = await fetch("https://time-calculator-api-rci5.onrender.com", {
+    const response = await fetch("https://time-calculator-api-rci5.onrender.com/api/calculate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
