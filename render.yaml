@@ -2,7 +2,7 @@ services:
   - type: web
     name: time_calculator
     env: docker
-    dockerfilePath: ./time-api/Dockerfile
+    dockerfilePath: time-api/Dockerfile
     buildCommand: ""
     startCommand: ""
     plan: free
